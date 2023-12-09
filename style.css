@@ -3,14 +3,14 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Roboto Condensed';
 }
 
 body{
-    /* background: url("https://i.pinimg.com/564x/90/8f/60/908f604b31b599bc137147afba1d7c44.jpg") ; */
     background: linear-gradient(45deg, #0a0a0a, #3a4452);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 .background{
     min-height: 100vh;
@@ -20,8 +20,8 @@ body{
 }
 
 .bg1{
-    height: 680px;
-    width: 200px;
+    height: 740px;
+    width: 250px;
     padding: 20px 20px;
     background-color: #131921;
     border-top-left-radius: 20px;
@@ -34,7 +34,7 @@ body{
     position: relative;
     justify-content: center;
     align-items: center;
-    top: 0;
+    top: 5px;
     left: 0;
 }
   
@@ -59,6 +59,7 @@ body{
 .heading{
     font-family: 'Roboto Condensed';
     font-weight: 600;
+    padding-top: 10px;
     padding-bottom: 10px;
     color: rgba(255, 162, 0, 0.968);
 }
@@ -75,6 +76,11 @@ body{
     list-style-type: none;
     color: antiquewhite;
 }
+.list li:hover{
+    transform: scale(1.01);
+}
+
+
 .contact{
     color: white;
 }
@@ -92,8 +98,8 @@ body{
 
 .bg2a{
     padding: 20px;
-    height: 100px;
-    width: 350px;
+    height: 130px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,8 +141,8 @@ body{
 
 .bg2b{
     padding: 20px;
-    height: 540px;
-    width: 350px;
+    height: 610px;
+    width: 400px;
     background-color: rgb(255, 221, 0);
     border-bottom-right-radius: 20px;
 }
@@ -148,31 +154,274 @@ body{
     padding: 10px 0px;
 }
 
-.future-plans{
+.future-plans ul{
     padding-bottom: 10px;
 }
-.future-plans li{
+.future-plans ul li{
     list-style-type: none;
     font-size: 18px;
     font-weight: 500;
 }
+.future-plans ul li:hover{
+    transform: scale(1.01);
+}
 
 .bg2b table{
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.525);
 }
 .bg2b table td{
     padding: 0px 5px;
 }
 
-.projects li{
+.projects ul li{
     list-style-type: none;
 }
-.projects a{
+.projects ul a{
     text-decoration: none;
     color: black;
     font-size: 17px; 
 }
-.projects li:hover{
+.projects ul li:hover{
     transform: scale(1.01);
+}
+
+
+@media screen and (max-width: 650px) {
+    .bg1{
+        width: 200px;
+    }
+    .bg2a{
+        width: 300px;
+    }
+    .bg2b{
+        width: 300px;
+    }
+    .heading{
+        font-size: 20px;
+    }
+    .para{
+        font-size: 15px;
+    }
+    .image1{
+        left: 0px;
+        width: 145px;
+    }
+    .image2{
+        left: 20px;
+    }
+    .list li{
+        font-size: 15px;
+    }
+    .contact a{
+        font-size: 13px;
+    }
+
+
+    .bg2a h1{
+        font-size: 35px;
+    }
+    .bg2a h2{
+        font-size: 16px;
+    }
+
+
+    .bg2b h2{
+        font-size: 21px;
+    }
+    .future-plans ul li{
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .bg1{
+        width: 170px;
+    }
+    .bg2a{
+        width: 270px;
+    }
+    .bg2b{
+        width: 270px;
+    }
+    .heading{
+        font-size: 17px;
+    }
+    .para{
+        font-size: 14px;
+    }
+    .image1{
+        left: 0px;
+        width: 135px;
+    }
+    .image2{
+        left: 10px;
+        width: 110px;
+    }
+    .list li{
+        font-size: 14px;
+    }
+    .contact i{
+        padding-right: 5px;
+    }
+    .contact a{
+        font-size: 12px;
+    }
+
+
+    .bg2a h1{
+        font-size: 32px;
+    }
+    .bg2a h2{
+        font-size: 14px;
+    }
+
+
+    .bg2b h2{
+        font-size: 18px;
+    }
+    .future-plans ul li{
+        font-size: 16px;
+    }
+    .bg2b table td{
+        padding: 0px 3px;
+        font-size: 14px;
+    }
+    .bg2b table th{
+        font-size: 15px;
+    }
+}
+
+
+
+
+@media screen and (max-width: 431px) {
+    .bg1{
+        width: 130px;
+        padding: 10px;
+    }
+    .bg2a{
+        width: 230px;
+    }
+    .bg2b{
+        width: 230px;
+    }
+    .image1{
+        left: 0px;
+        width: 110px;
+    }
+    .image2{
+        left: 10px;
+        width: 88px;
+    }
+    .heading{
+        font-size: 16px;
+    }
+    .para{
+        font-size: 12px;
+    }
+    .list li{
+        font-size: 13px;
+    }
+    .contact i{
+        padding-right: 5px;
+    }
+    .contact a{
+        font-size: 10px;
+    }
+
+
+    .bg2a h1{
+        font-size: 25px;
+    }
+    .bg2a h2{
+        font-size: 13px;
+    }
+
+
+    .bg2b{
+        padding: 5px;
+    }
+    .bg2b h2{
+        font-size: 17px;
+    }
+    .future-plans ul li{
+        font-size: 15px;
+    }
+    .bg2b table td{
+        padding: 0px 3px;
+        font-size: 14px;
+    }
+    .bg2b table th{
+        font-size: 15px;
+    }
+}
+
+
+
+@media screen and (max-width: 300px) {
+    .bg1{
+        width: 90px;
+        height: 800px;
+        padding: 10px;
+    }
+    .bg2a{
+        width: 190px;
+        height: 120px;
+    }
+    .bg2b{
+        width: 190px;
+        height: 680px;
+    }
+    .image1{
+        left: 0px;
+        width: 80px;
+    }
+    .image2{
+        left: 6px;
+        width: 62px;
+    }
+    .heading{
+        font-size: 15px;
+    }
+    .para{
+        font-size: 12px;
+    }
+    .list li{
+        font-size: 13px;
+    }
+    .contact i{
+        padding-right: 5px;
+    }
+    .contact a{
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+
+    .bg2a h1{
+        font-size: 23px;
+    }
+    .bg2a h2{
+        font-size: 13px;
+    }
+
+
+    .bg2b{
+        padding: 5px;
+    }
+    .bg2b h2{
+        font-size: 17px;
+    }
+    .future-plans ul li{
+        font-size: 14px;
+    }
+    .bg2b table td{
+        padding: 0px;
+        font-size: 12px;
+    }
+    .bg2b table th{
+        font-size: 12px;
+    }
 }
