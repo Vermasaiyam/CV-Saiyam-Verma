@@ -238,6 +238,7 @@ body{
 @media screen and (max-width: 500px) {
     .bg1{
         width: 170px;
+        padding: 10px;
     }
     .bg2a{
         width: 270px;
@@ -299,7 +300,7 @@ body{
 @media screen and (max-width: 431px) {
     .bg1{
         width: 130px;
-        padding: 10px;
+        padding: 8px;
     }
     .bg2a{
         width: 230px;
@@ -325,10 +326,10 @@ body{
         font-size: 13px;
     }
     .contact i{
-        padding-right: 5px;
+        padding-right: 4px;
     }
     .contact a{
-        font-size: 10px;
+        font-size: 9px;
     }
 
 
@@ -360,11 +361,11 @@ body{
 
 
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 360px) {
     .bg1{
         width: 90px;
         height: 800px;
-        padding: 5px;
+        padding: 8px;
     }
     .bg2a{
         width: 190px;
@@ -384,7 +385,7 @@ body{
         width: 62px;
     }
     .heading{
-        font-size: 15px;
+        font-size: 14px;
     }
     .para{
         font-size: 12px;
@@ -393,19 +394,19 @@ body{
         font-size: 13px;
     }
     .contact i{
-        padding-right: 5px;
+        padding-right: 3.5px;
     }
     .contact a{
-        font-size: 10px;
+        font-size: 7px;
         line-height: 15px;
     }
 
 
     .bg2a h1{
-        font-size: 23px;
+        font-size: 19px;
     }
     .bg2a h2{
-        font-size: 13px;
+        font-size: 11px;
     }
 
 
